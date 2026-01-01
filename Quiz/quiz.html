@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz | Simple</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="start" class="box">
+  <h2>Enter Your Name</h2>
+  <input id="player" placeholder="Your Name"><br>
+  <button onclick="startQuiz()">Start Quiz</button>
+</div>
+
+<div id="quiz" class="box" style="display:none">
+  <div class="card">
+    <h3>1. 2 + 2 = ?</h3>
+    <input id="q1" placeholder="Type answer"><br>
+  </div>
+
+  <div class="card">
+    <h3>2. Sun rises in?</h3>
+    <input id="q2" placeholder="East or West"><br>
+  </div>
+
+  <button onclick="submitQuiz()">Submit Quiz</button>
+  <button onclick="toggleTheme()">Toggle Theme</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
